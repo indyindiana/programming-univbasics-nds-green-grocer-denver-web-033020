@@ -22,6 +22,7 @@ def consolidate_cart(cart)
   cart_items = []
   item_count = 0 
   while item_count < cart.length do 
+<<<<<<< HEAD
     current_item = find_item_by_name_in_collection(cart[item_count][:item], cart_items)
     if current_item 
       current_item[:count] += 1 
@@ -38,6 +39,12 @@ def consolidate_cart(cart)
   end
   
   return cart_items
+=======
+    if cart_items[item_count]
+      cart_items[item_count] 
+    else cart_items[item_count] = 1
+  end
+>>>>>>> 3b4151964dba51a9370b1cccf3b3d4ba0a1e79cc
   # Consult README for inputs and outputs
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
